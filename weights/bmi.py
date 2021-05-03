@@ -1,7 +1,7 @@
 import sys
 
 def ounces2pounds(x):
-    return x*16
+    return x/16
 
 def stones2pounds(x):
     return x*14
@@ -11,11 +11,12 @@ def weight2kg(stones,pounds,ounces):
     return (stones2pounds(stones)+pounds+ounces2pounds(ounces))/2.2
 
 def height2metres(feet,inches):
-    return feet/3.82
+    height = feet + (0.1*inches)
+    return height/3.28
 
 
 def categorise(kg,metre):
-    bmi=kg*kg/metre
+    bmi=kg/metre*metre
     if bmi<19:
         cat='A'
     elif bmi<=26:

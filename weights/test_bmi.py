@@ -14,11 +14,11 @@ class test_bmi(unittest.TestCase):
 
     def test_wegiht2kg(self):
         n = bmi.weight2kg(10,10,10)
-        self.assertEqual(n,140.9090909090909)
+        self.assertEqual(n,140.909)
 
     def test_height2metres(self):
         n = bmi.height2metres(5, 8)
-        self.assertEqual(n,1.7682926829268293)
+        self.assertEqual(n,1.768)
 
     def test_categorise(self):
         n = bmi.categorise(70, 1.76)
